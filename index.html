@@ -38,7 +38,7 @@
         </div>
 		
         <div id="slide2" class="slide">
-            <h2>Contents</h2>
+            <h1>Contents</h1>
             <ul>
                 <li>Introduction</li>
                 <li>Methods</li>
@@ -47,7 +47,7 @@
         </div>
 		
         <div id="slide3" class="slide">
-            <h2>Introduction</h2>
+            <h1>Introduction</h1>
             <p>RaspberryPi is a popular device for IoT applications</p>
             <ul>
                 <li>Low cost</li>
@@ -59,18 +59,61 @@
         </div>
 		
         <div id="slide4" class="slide">
-            <h2>System Overview</h2>
-            <!-- System sketch content goes here -->
+            <h1>System Overview</h1>
+            <img src="images/system_sketch.png" alt="System Overview">
         </div>
 		
         <div id="slide5" class="slide">
-            <h2>Methods</h2>
-            <p>Install OS in microSD card</p>
-            <p>Enable SSH and specify WiFi settings</p>
-            <p>Use putty to connect to Pi</p>
-            <p>Install xrdp to enable RDC</p>
+            
+		<div class="slide-content">
+			<div class="text-content">
+			<h1>Methods</h1>
+				<p>Install OS in microSD card</p>
+				<p>Enable SSH and specify WiFi settings</p>
+				<p>Use putty to connect to Pi</p>
+				<p>Install xrdp to enable RDC</p>
+				</div>
+			<div class="image-content">
+				<img src="images/1.png" alt="Pi Imager">
+				<img src="images/rdc.png" alt="Remote Desktop">
+			</div>
+        </div>
+		
+		
+		<div id="slide6" class="slide">
+		<div class="slide-content">
+			<div class="slide-text">
+				<h1>Temperature Sensors</h1>
+				<h2>DHT11:</h2>
+				<p>Low cost</p>
+				<p>Measure temperature and humidity</p>
+				
+				
+				<p>Use putty to connect to Pi</p>
+				<p>Install xrdp to enable RDC</p>
+			</div>
+		<div class="slide-images">
+			<img src="images/dht_conn.jpg" alt="Description of image 1">
+			<img src="images/dht11.jpg" alt="Description of image 2">
+			<img src="images/sensor.jpg" alt="Description of image 3">
+		</div>
+		</div>
+		
+		<div id="slide7" class="slide">
+            <h1>Database</h1>
+            <ul>
+                <li>Thingspeak used to store sensor data</li>
+                <li>MongoDB Altas also used for data storage</li>
+                <li>MQTT used as communication protocol</li>
+            </ul>
+        </div>
+		
         </div>
         
+		
+		
+		
+		
 		
     </div>
 	

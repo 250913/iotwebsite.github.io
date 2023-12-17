@@ -80,3 +80,49 @@ button {
     display: block; /* To apply margin correctly */
     margin: 0 auto; /* Center the image and add space around it */
 }
+
+#slide4 h1 {
+    /* Style for your heading */
+    text-align: center;
+    margin-bottom: 20px; /* Space between the heading and the image */
+}
+
+#slide5 .slide-content {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between text and images */
+}
+
+#slide5 .text-content {
+    flex: 1; /* Takes up remaining space */
+    padding-right: 20px; /* Space between text and images */
+}
+
+#slide5 .image-content {
+    flex-basis: 40%; /* Adjust the width of the image container */
+    display: flex;
+    flex-direction: column; /* Images are stacked vertically */
+    align-items: center; /* Center images in their container */
+}
+
+#slide5 .image-content img {
+    width: 100%; /* Full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between the images */
+}
+
+#slide6 .slide-text {
+    /* Style for the text content */
+    margin-bottom: 20px; /* Space between text and images */
+}
+
+#slide6 .slide-images {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    gap: 10px; /* Space between images */
+}
+
+#slide6 .slide-images img {
+    width: calc(33% - 20px); /* Adjust the width - account for the gap */
+    height: auto; /* Maintain aspect ratio */
+}

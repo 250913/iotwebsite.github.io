@@ -20,15 +20,8 @@ document.querySelectorAll('#contentBar a').forEach(anchor => {
         });
 
         // Display the clicked slide
+		console.log("slideId:", slideId);
+
         document.querySelector(slideId).style.display = 'block';
     });
 });
-
-function changeSlide(move) {
-    const newSlide = currentSlide + move;
-    if (newSlide > 0 && newSlide <= totalSlides) {
-        document.getElementById('slide' + currentSlide).style.display = 'none';
-        currentSlide = newSlide;
-        document.getElementById('slide' + currentSlide).style.display = 'block';
-    }
-}
