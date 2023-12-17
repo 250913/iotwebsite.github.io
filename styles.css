@@ -1,13 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: start; /* Align items to the start vertically */
+    min-height: 100vh; /* Full viewport height */
 }
+
+
 
 .slide {
     display: none;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
+    place-items: center; /* Shortcut for align-items and justify-items */
+    height: 300px; /* Set a fixed height or as needed */
+    /* Other existing styles... */
 }
+
 
 #slide1 {
     display: block;
@@ -15,6 +21,13 @@ body {
 
 button {
     margin: 5px;
+}
+
+#contentBar {
+    /* Your existing styles */
+    position: fixed; /* Keeps the content bar fixed */
+    left: 0;
+    top: 0;
 }
 
 #contentBar {
@@ -39,4 +52,31 @@ button {
 
 #presentation {
     margin-left: 220px; /* Adjust based on the width of the contentBar */
+}
+
+#buttonContainer {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    left: 50%; /* Centering horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    z-index: 100; /* Ensure it's above other content */
+}
+
+#buttonContainer button {
+    margin: 0 5px; /* Space between buttons */
+    /* Other button styles remain the same */
+}
+
+#slide3 h1 {
+    /* Style for your heading */
+    text-align: center;
+    margin-bottom: 20px; /* Space between the heading and the image */
+}
+
+#slide3 img {
+    width: 100%; /* Full width of the slide */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Adjust maximum height as needed */
+    display: block; /* To apply margin correctly */
+    margin: 0 auto; /* Center the image and add space around it */
 }

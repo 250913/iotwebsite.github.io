@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Temperature Monitoring with RaspberryPi</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <div id="contentBar">
-        <a href="#slide1">Introduction</a>
-        <a href="#slide2">Methods</a>
-        <a href="#slide3">Results</a>
+        <a href="#slide1">Title</a>
+        <a href="#slide2">Contents</a>
+        <a href="#slide3">Introduction</a>
+		<a href="#slide4">System Overview</a>
+        <a href="#slide5">Methods</a>
+		<a href="#slide6">Temperature Sensors</a>
+        <a href="#slide7">Database and MQTT</a>
+		<a href="#slide8">Results and Discussions</a>
+        <a href="#slide9">Temperature Readings</a>
+		<a href="#slide10">Alarm + LED</a>
+		<a href="#slide11">Thingspeak</a>
+		<a href="#slide12">MongoDB</a>
+		<a href="#slide13">Temperature Data</a>
+		<a href="#slide14">MQTT</a>
+		<a href="#slide15">Cybersecurity in RaspberryPi</a>
+		<a href="#slide16">Cybersecurity in MQTT</a>
+		<a href="#slide17">Conclusions</a>
+		<a href="#slide18">References</a>
         <!-- Add more links as needed -->
     </div>
   
 
 	
     <div id="presentation">
+	
         <div id="slide1" class="slide">
             <h1>Temperature Logging and Monitoring using RaspberryPi</h1>
         </div>
+		
         <div id="slide2" class="slide">
             <h2>Contents</h2>
             <ul>
@@ -26,6 +45,7 @@
                 <li>Results and Discussion</li>
             </ul>
         </div>
+		
         <div id="slide3" class="slide">
             <h2>Introduction</h2>
             <p>RaspberryPi is a popular device for IoT applications</p>
@@ -34,12 +54,15 @@
                 <li>Low power consumption</li>
                 <li>GPIO pins enables use of multiple sensors</li>
                 <li>Runs Linux</li>
+				<img src="images/pi.jpg" alt="RaspberryPi Device">
             </ul>
         </div>
+		
         <div id="slide4" class="slide">
-            <h2>System Sketch</h2>
+            <h2>System Overview</h2>
             <!-- System sketch content goes here -->
         </div>
+		
         <div id="slide5" class="slide">
             <h2>Methods</h2>
             <p>Install OS in microSD card</p>
@@ -47,10 +70,14 @@
             <p>Use putty to connect to Pi</p>
             <p>Install xrdp to enable RDC</p>
         </div>
-        <!-- Additional slides go here -->
+        
+		
     </div>
-    <button id="prevBtn">Previous</button>
-    <button id="nextBtn">Next</button>
+	
+    <div id="buttonContainer">
+		<button id="prevBtn">Previous</button>
+		<button id="nextBtn">Next</button>
+	</div>
 
     <script src="script.js"></script>
 </body>

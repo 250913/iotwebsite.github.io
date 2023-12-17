@@ -12,9 +12,15 @@ document.getElementById('nextBtn').addEventListener('click', function() {
 document.querySelectorAll('#contentBar a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        const slideId = this.getAttribute('href');
+
+        // Hide all slides
+        document.querySelectorAll('.slide').forEach(slide => {
+            slide.style.display = 'none';
         });
+
+        // Display the clicked slide
+        document.querySelector(slideId).style.display = 'block';
     });
 });
 
