@@ -16,3 +16,27 @@ body {
 button {
     margin: 5px;
 }
+
+#contentBar {
+    width: 200px; /* Adjust width as needed */
+    background-color: #eee; /* Light background for the bar */
+    padding: 20px;
+    height: 100vh; /* Full height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Makes it always visible */
+}
+
+#contentBar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+#contentBar a:hover {
+    text-decoration: underline;
+}
+
+#presentation {
+    margin-left: 220px; /* Adjust based on the width of the contentBar */
+}
