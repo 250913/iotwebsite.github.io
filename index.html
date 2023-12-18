@@ -63,6 +63,17 @@
 		
         <div id="slide5" class="slide">
 			<h1 class="slide-heading">Methods</h1>
+				<ul>
+					<li>Install OS in microSD card</li>
+					<li>Enable SSH and specify WiFi settings</li>
+					<li>Use putty to connect to Pi</li>
+					<li>Install xrdp to enable RDC</li>
+				</ul>
+				
+				<div>
+					<img src="images/1.png" alt="Pi Imager">
+					<img src="images/rdc.png" alt="RDC">
+				</div>
         </div>
 		
 		<div id="slide6" class="slide">
@@ -73,15 +84,14 @@
 					<li>Measure temperature and humidity</li>
 					<li>Inbuilt ADC (Analog to Digital Converter)</li>
 				</ul>
-
 			<h2>DS18b20:</h2>
 				<ul>
 					<li>Can measure temperature from -55°C to 125°C</li>
 					<li>Programmable resolution from 9 to 12 bits</li>
 				</ul>
 				
-				<div class="image-container">
-					<img src="images/dht.jpg" alt="DHT11 sensor">
+				<div>
+					<img src="images/dht11.jpg" alt="DHT11 sensor">
 					<img src="images/dht_conn.jpg" alt="DHT11 connection">
 					<img src="images/sensor.jpg" alt="DS18b20 sensor">
 				</div>
@@ -89,50 +99,135 @@
 		
 		<div id="slide7" class="slide">
 			<h1 class="slide-heading">Database and MQTT</h1>
+				<u1>
+					<li>Thingspeak used to store sensor data</li>
+					<li>MongoDB Altas also used for data storage</li>
+					<li>MQTT used as communication protocol</li>
+					<li>HiveMQ cloud used as broker</li>
+					<li>RaspberryPi published data</li>
+					<li>PC subscribes to the data</li>
+				</ul>
         </div>
 		
 		<div id="slide8" class="slide">
 			<h1 class="slide-heading">Results and Discussions</h1>
+				<u1>
+					<li>RaspberryPi connected with RDC</li>
+					<li>Updated to latest OS</li>
+					<li>Installed required packages using pip</li>
+				</ul>
+				
+				<div>
+					<img src="images/rasp_rdc.png" alt="Desktop">
+					<img src="images/updates.png" alt="Terminal">
+				</div>
         </div>
 		
 		<div id="slide9" class="slide">
 			<h1 class="slide-heading">Temperature Readings</h1>
+			<p> DHT11 often produces errors</p>
+			
+			<div>
+				<img src="images/dht11.png" alt="DHT11 program">
+				<img src="images/dht11_res.png" alt="DHT11 output">
+			</div>
+			
         </div>
 		
 		<div id="slide10" class="slide">
 			<h1 class="slide-heading">Alarm + LED</h1>
+			<u1>
+				<li>LED used to indicate high temp (here = 22C)</li>
+				<li>Button used to acknowledge alarm</li>
+				<li>DS18b20 didn't work with circuit python</li>
+			</ul>
+			
+			<div>
+				<img src="images/prg.png" alt="DS18b20rogram">
+				<img src="images/IMG_20231021_112610.jpg" alt="Connections - sensor">
+				<img src="images/alarm.png" alt="Alarm">
+			</div>		
         </div>
 		
 		<div id="slide11" class="slide">
 			<h1 class="slide-heading">Thingspeak</h1>
-        </div>
+			<u1>
+				<li>Temperature data send to Thingspeak and MongoDB cloud</li>
+				<li>Access control needs to be added in MongoDB Atlas</li>
+				<li>Write Key and channel id are needed for ThingSpeak</li>
+			</ul>
+			<div>
+				<img src="images/prg2.png" alt="Thingspeak prg">
+			</div>
+		</div>
 		
 		<div id="slide12" class="slide">
 			<h1 class="slide-heading">MongoDB</h1>
+			<div>
+				<img src="images/mongo_atlas.png" alt="MongoDB">
+			</div>
         </div>
 		
 		<div id="slide13" class="slide">
 			<h1 class="slide-heading">Temperature Data</h1>
+			<u1>
+				<li>Temperature data plotted from MongoDB shown in blue graph</li>
+				<li>Thingspeak data is in red</li>
+				<li>Some statistics also found</li>
+			</ul>
+			
+			<div>
+				<img src="images/new.png" alt="Temp data">
+			</div>	
         </div>
 		
 		<div id="slide14" class="slide">
 			<h1 class="slide-heading">MQTT</h1>
+			<u1>
+				<li>HiveMQ Cloud  used</li>
+				<li>Publisher is RapberryPi and subscriber is PC</li>
+			</ul>
+			<div>
+				<img src="images/hive.png" alt="MQTT image">
+			</div>
         </div>
 		
 		<div id="slide15" class="slide">
 			<h1 class="slide-heading">Cybersecurity in RaspberryPi</h1>
+			<u1>
+				<li>Access control to devices and directories in Linux</li>
+				<li>Update the Linux to latest version</li>
+				<li>Firewall in Linux can be enabled</li>
+				<li>Remote access can be controlled</li>
+			</ul>
         </div>
 		
 		<div id="slide16" class="slide">
 			<h1 class="slide-heading">Cybersecurity in MQTT</h1>
+			<u1>
+				<li>HiveMQ uses TLS</li>
+				<li>User Name and strong password set</li>
+				<li>Authentication is performed to secure communication between broker and clients</li>
+				<li>Access management</li>
+			</ul>
         </div>
 		
 		<div id="slide17" class="slide">
 			<h1 class="slide-heading">Conclusions</h1>
+			<u1>
+				<li>Interfaced two temperature sensors with RaspberryPi</li>
+				<li>Send data to Cloud services</li>
+				<li>Used MQTT to enable publisher/subscriber model</li>
+				<li>Secured the connections with good practices</li>
+			</ul>
         </div>
 		
 		<div id="slide18" class="slide">
 			<h1 class="slide-heading">References</h1>
+			<u1>
+				<li>https://www.halvorsen.blog, [Online]. Available: https://www.halvorsen.blog/documents/teaching/courses/iot/lab_raspberrypi.php[Accessed: 22-10-2023]</li>
+				<li>https://electrosome.com, [Online]. Available:  https://electrosome.com/ds18b20-sensor-raspberry-pi-python/</li>
+			</ul>
         </div>
 	
 	
