@@ -28,17 +28,15 @@
 		<a href="#slide18">References</a>
         <!-- Add more links as needed -->
     </div>
-  
-
 	
     <div id="presentation">
 	
         <div id="slide1" class="slide">
-            <h1>Temperature Logging and Monitoring using RaspberryPi</h1>
+            <h1 class="slide-heading">Temperature Logging and Monitoring using RaspberryPi</h1>
         </div>
 		
         <div id="slide2" class="slide">
-            <h1>Contents</h1>
+            <h1 class="slide-heading">Contents</h1>
             <ul>
                 <li>Introduction</li>
                 <li>Methods</li>
@@ -47,7 +45,7 @@
         </div>
 		
         <div id="slide3" class="slide">
-            <h1>Introduction</h1>
+            <h1 class="slide-heading">Introduction</h1>
             <p>RaspberryPi is a popular device for IoT applications</p>
             <ul>
                 <li>Low cost</li>
@@ -59,69 +57,93 @@
         </div>
 		
         <div id="slide4" class="slide">
-            <h1>System Overview</h1>
+            <h1 class="slide-heading">System Overview</h1>
             <img src="images/system_sketch.png" alt="System Overview">
         </div>
 		
         <div id="slide5" class="slide">
-            
-		<div class="slide-content">
-			<div class="text-content">
-			<h1>Methods</h1>
-				<p>Install OS in microSD card</p>
-				<p>Enable SSH and specify WiFi settings</p>
-				<p>Use putty to connect to Pi</p>
-				<p>Install xrdp to enable RDC</p>
-				</div>
-			<div class="image-content">
-				<img src="images/1.png" alt="Pi Imager">
-				<img src="images/rdc.png" alt="Remote Desktop">
-			</div>
+			<h1 class="slide-heading">Methods</h1>
         </div>
-		
 		
 		<div id="slide6" class="slide">
-		<div class="slide-content">
-			<div class="slide-text">
-				<h1>Temperature Sensors</h1>
-				<h2>DHT11:</h2>
-				<p>Low cost</p>
-				<p>Measure temperature and humidity</p>
+			<h1 class="slide-heading">Temperature Sensors</h1>
+			<h2>DHT11:</h2>
+				<ul>
+					<li>Low cost</li>
+					<li>Measure temperature and humidity</li>
+					<li>Inbuilt ADC (Analog to Digital Converter)</li>
+				</ul>
+
+			<h2>DS18b20:</h2>
+				<ul>
+					<li>Can measure temperature from -55°C to 125°C</li>
+					<li>Programmable resolution from 9 to 12 bits</li>
+				</ul>
 				
-				
-				<p>Use putty to connect to Pi</p>
-				<p>Install xrdp to enable RDC</p>
-			</div>
-		<div class="slide-images">
-			<img src="images/dht_conn.jpg" alt="Description of image 1">
-			<img src="images/dht11.jpg" alt="Description of image 2">
-			<img src="images/sensor.jpg" alt="Description of image 3">
-		</div>
-		</div>
+				<div class="image-container">
+					<img src="images/dht.jpg" alt="DHT11 sensor">
+					<img src="images/dht_conn.jpg" alt="DHT11 connection">
+					<img src="images/sensor.jpg" alt="DS18b20 sensor">
+				</div>
+        </div>
 		
 		<div id="slide7" class="slide">
-            <h1>Database</h1>
-            <ul>
-                <li>Thingspeak used to store sensor data</li>
-                <li>MongoDB Altas also used for data storage</li>
-                <li>MQTT used as communication protocol</li>
-            </ul>
+			<h1 class="slide-heading">Database and MQTT</h1>
         </div>
 		
+		<div id="slide8" class="slide">
+			<h1 class="slide-heading">Results and Discussions</h1>
         </div>
-        
 		
+		<div id="slide9" class="slide">
+			<h1 class="slide-heading">Temperature Readings</h1>
+        </div>
 		
+		<div id="slide10" class="slide">
+			<h1 class="slide-heading">Alarm + LED</h1>
+        </div>
 		
+		<div id="slide11" class="slide">
+			<h1 class="slide-heading">Thingspeak</h1>
+        </div>
 		
+		<div id="slide12" class="slide">
+			<h1 class="slide-heading">MongoDB</h1>
+        </div>
 		
-    </div>
+		<div id="slide13" class="slide">
+			<h1 class="slide-heading">Temperature Data</h1>
+        </div>
+		
+		<div id="slide14" class="slide">
+			<h1 class="slide-heading">MQTT</h1>
+        </div>
+		
+		<div id="slide15" class="slide">
+			<h1 class="slide-heading">Cybersecurity in RaspberryPi</h1>
+        </div>
+		
+		<div id="slide16" class="slide">
+			<h1 class="slide-heading">Cybersecurity in MQTT</h1>
+        </div>
+		
+		<div id="slide17" class="slide">
+			<h1 class="slide-heading">Conclusions</h1>
+        </div>
+		
+		<div id="slide18" class="slide">
+			<h1 class="slide-heading">References</h1>
+        </div>
+	
 	
     <div id="buttonContainer">
 		<button id="prevBtn">Previous</button>
 		<button id="nextBtn">Next</button>
 	</div>
 
+
     <script src="script.js"></script>
+	
 </body>
+
 </html>
